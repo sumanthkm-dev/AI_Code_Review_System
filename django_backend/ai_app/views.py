@@ -17,6 +17,7 @@ def start_task(request):
     return Response({"task_id": task.id, "status": "Task Started"})
 
 
+# comment
 @api_view(["GET"])
 def check_task_status(request, task_id):
     result = AsyncResult(task_id)
